@@ -41,6 +41,8 @@ public:
     void popFront();
 
     //problema 4
+    void Maxelemen();
+    
     bool buscar_num(T);
     void Buscar(T);
 
@@ -178,7 +180,6 @@ void LinkedList<T>::delete_pos(int pos) {
     }
 }
 
-//problema 4
 template <typename T>
 bool LinkedList<T>:: buscar_num(T value){
     Node<T>* actual = head;
@@ -209,7 +210,19 @@ void LinkedList<T>::Buscar(T value) {
     }
 }
 
-
+//problema 4
+template<typename T>
+int LinkedList<T>::Maxelemen(){
+    Node *aux = head;
+    int max = aux->getValue(); 
+    while(aux != nullptr){
+        if(max < aux->getValue()){
+            max = aux->getValue();
+        }
+        aux = aux->getNext();
+    }
+    return max;
+}
 
 //problema 5
 template<typename T>
