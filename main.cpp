@@ -26,7 +26,7 @@ int main() {
     l2.pushFront(33);
 
     cout << l1 << endl;
-
+    cout << l1.Maxelemen()<<endl;
     l1.Buscar(6);
     l1.Buscar(20);
 
