@@ -41,7 +41,7 @@ public:
     void popFront();
 
     //problema 4
-    void Maxelemen();
+    int Maxelemen();
     
     bool buscar_num(T);
     void Buscar(T);
