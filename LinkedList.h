@@ -213,7 +213,7 @@ void LinkedList<T>::Buscar(T value) {
 //problema 4
 template<typename T>
 int LinkedList<T>::Maxelemen(){
-    Node *aux = head;
+    Node<T> *aux = head;
     int max = aux->getValue(); 
     while(aux != nullptr){
         if(max < aux->getValue()){
